@@ -22,11 +22,21 @@ router.get( '/analysis/:reqMsg', function ( req, res ) {
 	var resMsg = analyseModule.analyse(reqMsg);
     fs.writeFile("getResult/rule_res.txt", resMsg, function(err) {
         if(err) {
-            return console.log(err);
+                return console.log(err);
         }
-    console.log("The file was saved!");
-}); 
-	res.send(resMsg);
+        else{
+            console.log("The file was saved!");
+        }
+    }); 
+    execProcess.result("sh backEnd/test.sh", function(err, response){
+        if(!err){
+            console.log(resMsg);
+            res.send(resMsg);
+        }else {
+            console.log(err);
+        }
+    });
+    
 });
 
 
@@ -44,16 +54,12 @@ router.get( '/upload/:link', function ( req, res ) {
   console.log("PP"+url5);
   var request = https.get(url5, function(response) {
     response.pipe(file);
-
-    execProcess.result("sh backEnd/test.sh ", function(err, response){
+    execProcess.result("sh backEnd/test.sh", function(err, response){
         if(!err){
             console.log(response);
             console.log("Bash Start . . .")
             fs.readFile('backEnd/result.txt', 'utf8', function(err, data) {
                 if (err) throw err;
-                console.log('Data >> '+data);
-                analyseModule.imgPro(data);
-                // res.sendFile(__dirname+'/backEnd/res_img.png');
                 var j = {
                     status: "ok"
                 };
@@ -65,22 +71,22 @@ router.get( '/upload/:link', function ( req, res ) {
         }
     });
 
-    execProcess.result("python  getResult/resultI.py", function(err, response){
-        if(!err){
-            console.log(response);
+    // execProcess.result("python  getResult/resultI.py", function(err, response){
+    //     if(!err){
+    //         console.log(response);
             
-        }else {
-            console.log(err);
-        }
-    });
+    //     }else {
+    //         console.log(err);
+    //     }
+    // });
 
-    execProcess.result("python  getResult/resultT.py", function(err, response){
-        if(!err){
-            console.log(response);
-        }else {
-            console.log(err);
-        }
-    });
+    // execProcess.result("python  getResult/resultT.py", function(err, response){
+    //     if(!err){
+    //         console.log(response);
+    //     }else {
+    //         console.log(err);
+    //     }
+    // });
 
 
   });

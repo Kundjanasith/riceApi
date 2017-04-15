@@ -33,4 +33,7 @@ echo "res.png"
 python Zx.py res.png ri.txt res_img.png
 python analyse.py ri.txt ri_ana.txt
 python cat.py ri_ana.txt
+cd ../getResult
+python resultI.py
+python resultT.py
 echo "Finish"

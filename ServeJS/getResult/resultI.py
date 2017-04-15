@@ -2,7 +2,7 @@ import json
 from pprint import pprint
 
 #rule base
-json_data=open('getResult/rule_res.txt').read()
+json_data=open('rule_res.txt').read()
 data = json.loads(json_data)
 Rbacterial_blight = data['bacterial_blight']
 print(Rbacterial_blight)
@@ -30,7 +30,7 @@ Rtungro = data['tungro']
 print(Rtungro)
 
 #img pro
-file = open('backEnd/result.txt', 'r') 
+file = open('../backEnd/result.txt', 'r') 
 disS = []
 perS = []
 for line in file.readlines():
@@ -119,5 +119,5 @@ fileJ = {
     "sheath_rot": sheath_rot,
     "tungro": tungro
 }
-with open('getResult/resultI.txt', 'w') as outfile:
+with open('resultI.txt', 'w') as outfile:
     json.dump(fileJ, outfile)
