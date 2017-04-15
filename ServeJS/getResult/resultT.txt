@@ -1,0 +1,1 @@
+{"tungro": 0.0, "false_smut": 0.0, "sheath_blight": 0.0, "brown_spot": 33.33333333333333, "narrow_brown_spot": 0.0, "blast": 12.5, "red_stripe": 25.0, "rice_grassy_stunt": 0.0, "sheath_rot": 33.33333333333333, "leaf_scald": 0.0, "bacterial_blight": 33.33333333333333}

@@ -1,0 +1,5 @@
+BLUE :  0 , 0 
+GREEN :  198 , 247 
+PURPLE :  0 , 0 
+RED :  0 , 0 
+YELLOW :  112 , 304 

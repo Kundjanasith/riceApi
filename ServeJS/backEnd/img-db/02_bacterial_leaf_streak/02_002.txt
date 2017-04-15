@@ -1,0 +1,72 @@
+Start
+GREEN: 28,487
+GREEN: 82,469
+GREEN: 279,418
+GREEN: 106,386
+GREEN: 104,381
+GREEN: 103,375
+GREEN: 28,352
+GREEN: 315,324
+GREEN: 287,295
+GREEN: 93,322
+GREEN: 308,165
+GREEN: 188,127
+GREEN: 192,93
+GREEN: 139,150
+GREEN: 6,67
+GREEN: 307,81
+GREEN: 70,129
+GREEN: 247,147
+GREEN: 150,35
+GREEN: 8,20
+RED: 200,431
+RED: 204,351
+RED: 152,340
+RED: 165,275
+RED: 46,58
+RED: 172,45
+RED: 218,20
+RED: 176,17
+YELLOW: 47,490
+YELLOW: 196,489
+YELLOW: 180,437
+YELLOW: 183,406
+YELLOW: 10,405
+YELLOW: 136,373
+YELLOW: 295,385
+YELLOW: 44,384
+YELLOW: 235,413
+YELLOW: 11,346
+YELLOW: 189,312
+YELLOW: 149,298
+YELLOW: 190,259
+YELLOW: 38,281
+YELLOW: 158,210
+YELLOW: 305,231
+YELLOW: 170,153
+YELLOW: 172,109
+YELLOW: 278,69
+YELLOW: 301,96
+YELLOW: 194,34
+YELLOW: 286,25
+Finish
+Diagnosis : 
+01 [ Bacterial blight ] : 
+02 [ Bacterial leaf streak ] : 
+03 [ Bacterial sheath brown rot ] : 
+04 [ Bakanae ] : 
+05 [ Blast leaf and collar ] : 
+06 [ Blast node and neck ] : 
+07 [ Brown spot ] : 
+08 [ False smut ] : 
+09 [ Blast node and neck ] : 
+10 [ Narrow brown spot ] : 
+11 [ Red stripe ] : 
+12 [ Rice grassy stunt ] : 
+13 [ Rice ragged stunt ] : 
+14 [ Rice stripe virus disease ] : 
+15 [ Rice yellow mottle virus ] : 
+16 [ Sheath blight ] : 
+17 [ Sheath rot ] : 
+18 [ Stem rot ] : 
+19 [ Tungroc ] : 
