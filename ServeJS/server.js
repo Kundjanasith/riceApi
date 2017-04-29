@@ -3,9 +3,19 @@ var app = express();
 var router = express.Router();
 
 const analyseModule = require('./analyse');
-
-
+var cors = require('cors')
+app.use(cors({credentials: true, origin: true}));
 router.use( function ( req, res, next ) {
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin', '*');
+
+    // Request methods you wish to allow
+    //res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+
+    // Request headers you wish to allow
+    //res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    // Set to true if you need the 
 	next();
 });
 
@@ -18,6 +28,7 @@ var https = require('https');
 var fs = require('fs');
 
 router.get( '/analysis/:reqMsg', function ( req, res ) {
+	res.header('Access-Control-Allow-Origin', '*');
 	var reqMsg = req.params.reqMsg;
 	var resMsg = analyseModule.analyse(reqMsg);
     fs.writeFile("getResult/rule_res.txt", resMsg, function(err) {
@@ -110,10 +121,11 @@ router.get( '/test', function ( req, res ) {
 });
 
 router.get( '/', function ( req, res ) {
+        console.log("//");
 	res.sendFile(__dirname+'/index.html');
 });
 
 app.use( '/', router );
-app.listen(1919,function(){
-	console.log("Running 1919");
+app.listen(80,function(){
+	console.log("Running 80");
 });

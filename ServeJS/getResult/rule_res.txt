@@ -1,1 +1,1 @@
-{"blast":8,"leaf_scald":3,"narrow_brown_spot":3,"sheath_rot":3,"red_stripe":4,"bakanae":4,"false_smut":2,"rice_grassy_stunt":4,"brown_spot":6,"tungro":2,"bacterial_blight":3,"sheath_blight":1}
+{"blast":2,"leaf_scald":1,"narrow_brown_spot":1,"sheath_rot":1,"red_stripe":2,"bakanae":0,"false_smut":0,"rice_grassy_stunt":0,"brown_spot":1,"tungro":0,"bacterial_blight":1,"sheath_blight":0}
